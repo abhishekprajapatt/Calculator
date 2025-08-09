@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator - Calculate Your Mathematical Problem</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form action="">
+                <div class="display">
+                    <input type="text" name="display" id="display">
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="clearDisplay()" class="operator" />
+                    <input type="button" value="DE" onclick="deleteLastChar()" class="operator" />
+                    <input type="button" value="." onclick="addCharToDisplay('.')" class="operator" />
+                    <input type="button" value="/" onclick="addCharToDisplay('/')" class="operator" />
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="addCharToDisplay('7')" />
+                    <input type="button" value="8" onclick="addCharToDisplay('8')" />
+                    <input type="button" value="9" onclick="addCharToDisplay('9')" />
+                    <input type="button" value="*" onclick="addCharToDisplay('*')" class="operator" />
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="addCharToDisplay('4')" />
+                    <input type="button" value="5" onclick="addCharToDisplay('5')" />
+                    <input type="button" value="6" onclick="addCharToDisplay('6')" />
+                    <input type="button" value="-" onclick="addCharToDisplay('-')" class="operator" />
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="addCharToDisplay('1')" />
+                    <input type="button" value="2" onclick="addCharToDisplay('2')" />
+                    <input type="button" value="3" onclick="addCharToDisplay('3')" />
+                    <input type="button" value="+" onclick="addCharToDisplay('+')" class="operator" />
+                </div>
+                <div>
+                    <input type="button" value="000" onclick="addCharToDisplay('000')" />
+                    <input type="button" value="0" onclick="addCharToDisplay('0')" />
+                    <input type="button" value="=" onclick="calculate()" class="equal operator" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
